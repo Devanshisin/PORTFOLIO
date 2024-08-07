@@ -1,14 +1,18 @@
 *{
     margin: 0px;
     padding: 0px;
-    background-color: black;
     color: white;
+    background-image: url("./assets/bg\ img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 .navbar{
     display: flex;
     justify-content: space-evenly;
-    margin-top: 50px;
-    text-decoration: none; 
+    margin-top: 50px; 
+    text-decoration: none;
+    background-color: black;
 }
 
 .navbar a:hover{
@@ -58,12 +62,18 @@
 
 .About {
     position: relative;
-    left: 100px;
-    top: 30px;
+    left: 50px;
+    top: 50px;
     bottom: 100px;
-}
+    font-size: 20px;
+    display: flex;
+} 
 .abt{
-    font-size: 30px;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.Resume{
+    position: relative;
 }
 
 .About H4{
@@ -72,10 +82,9 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 30px;
     margin-bottom: 20px;
+    
 }
-.About i{
-    size: 100px;
-}
+
 
 .project{
     position: relative;
@@ -83,16 +92,30 @@
     top: 50px;
     font-size: 23px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 100px;
 }
  .Contact{
     position: relative;
-    left: 100px;
+    right: 200px;
     top: 50px;
     margin-bottom: 30px;
+     display: inline-block;
+ }
+ .Contact p{
+    font-size: 23px;
+    margin-bottom: 20px;
+    position: relative;
+    left: 100px;
+ }
+ .Contact h1{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    left: 200px;
  }
  .About object{
     position: relative;
-    left: 250px;
+    left: 300px;
  }
  .project img {
     position: relative;
@@ -106,3 +129,102 @@
     position: relative;
     left: 250px;
  }
+.Form{
+    position: relative;
+    left: 300px;
+    background-color:azure;
+    display: flex;
+    justify-items: center;
+    margin-bottom: 100px;
+    bottom: 25px;}
+::placeholder{
+    color: black;
+    background-color:white;
+}
+@media only screen and (max-width: 768px) {
+    nav {
+      flex-direction: row;
+      align-items:center;
+    }
+    nav a {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .heropg {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .heropg h1 {
+      font-size: 24px;
+    }
+    .heropg h3 {
+      font-size: 18px;
+    }
+    .heropg h6 {
+      font-size: 14px;
+    }
+
+    .profile {
+      flex-direction: column;
+      align-items: center;
+    }
+    .profile img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .About {
+      padding: 20px;
+    }
+    .About h1 {
+      font-size: 24px;
+    }
+    .About p {
+      font-size: 16px;
+    }
+    .About img {
+      width: 50%;
+      height: auto;
+    }
+  
+    .Project {
+      padding: 20px;
+    }
+    .Project h1 {
+      font-size: 24px;
+    }
+    .Project img {
+      width: 156px;
+      height: 315px;
+    }
+  
+    .Contact {
+      padding: 20px;
+    }
+    .Contact h1 {
+      font-size: 24px;
+    }
+    .Contact p {
+      font-size: 16px;
+    }
+    .Contact img {
+      width: 50%;
+      height: auto;
+    }
+    .Form {
+      flex-direction: column;
+      align-items: center;
+    }
+    .Form input {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .Form button {
+      width: 100%;
+    }
+  }
+  

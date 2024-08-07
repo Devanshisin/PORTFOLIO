@@ -12,11 +12,11 @@
         </script>
 </head>
 <body>
-    <nav class="navbar"> 
-        <i class="fa-solid fa-house"> <a href="#hero">Home</a></i>
-        <i class="fa-solid fa-exclamation"> <a href="#about">About</a> </i>
-        <i class="fa-solid fa-list-check"> <a href="#project">Project</a> </i>
-        <i class="fa-solid fa-phone"><a href="#contact">Contact</a> </i> 
+    <nav class="navbar" id="navbar"> 
+        <a href="#hero"><i class="fa-solid fa-house"></i> HOME</a>
+       <a href="#about"> <i class="fa-solid fa-info"></i> ABOUT </a> 
+        <a href="#project"><i class="fa-solid fa-list-check"> </i>PROJECT</a> 
+        <a href="#contact"><i class="fa-solid fa-phone"></i>CONTACT</a>
     </nav>
     <br>
     <section class="heropg" id="hero">
@@ -38,13 +38,13 @@
        <div>
         <H1 class="abt">About Myself</H1>
         <p>Hello! I'm Devanshi Singh, A 2nd year Btech student and a passionate and dedicated front-end developer with a keen eye for design and a love for vlogging.<br> My journey in the tech world is driven by my constant desire to learn and grow at every step. I bring a blend of creativity and technical expertise, aiming to craft <br>engaging and user-friendly web experiences. </p>
-        <H4> Tech Stack</H4>
-        <i class="fa-brands fa-js fa-lg fa-2xl"></i>
-        <i class="fa-brands fa-css3-alt fa-2xl"></i>
-        <i class="fa-brands fa-html5 fa-2xl"></i>
-        <i class="fa-brands fa-python fa-2xl"></i>
+        <H4 class="tech stack"> Tech Stack</H4>
+       <img src="./assets/JavaScript-logo.png" alt="JS" height="50px" width="50px">
+       <img src="./assets/html logo.png" alt="HTML" height="50px" width="50px">
+       <img src="./assets/css logo.png" alt="CSS" height="50px" width="50px">
+       <img src="./assets/canva.webp" alt="CANVA" height="50px" width="50px">
         <h4>Resume</h4>
-        <object type="application/pdf" data="./assets/Devanshi Singh Resume.pdf" width="560" height="315"></object>
+        <object class="Resume" type="application/pdf" data="./assets/Devanshi Singh Resume.pdf" width="560" height="315"></object>
        </div>
     </section> 
     <section class="Project" id="project">
@@ -52,19 +52,28 @@
             <h1>Project</h1>
             <h4>Web Development</h4>
             <div>
-            <img src="./assets/landing pg img.png" width="560" height="315">
-        <p>Created a Landing Page using HTML and CSS</p></div>
+           <a href="https://web-dev-delta-seven.vercel.app/" target="_blank"><img src="./assets/landing pg img.png" width="560" height="315">
+            <br>
+            <p>Created a Landing Page using HTML and CSS</p>
+            <a href="https://bahamas-pi.vercel.app/" target="_blank"><img src="./assets/bahama img.png" alt="Bahamas Flags" width="560" height="315"></a>
+            <p>Created a Bahamas Flag</p>
             <h4>Youtube</h4>
            <iframe width="560" height="315" src="https://www.youtube.com/embed/YqOjemrLpBw?si=O7sPEkS8umiAaz-f" title="YouTube Channel Trailer" frameborder="0"></iframe>
         </div>
-    </section class="Contact" id="contact">
+    <section id="contact">
     <div class="Contact">
         <h1>Contact</h1>
-        <a href="http://www.instagram.com/devanshiii.singh" target="_blank">  <i class="fa-brands fa-instagram fa-2xl"> </i></a>
-      
-        <a href="mailto:singh20.devanshi@gmail.com" target="_blank"><i class="fa-solid fa-envelope fa-2xl"></i></a>
-        <a href="https://github.com/Devanshisin" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
-        <a href="https://www.linkedin.com/in/devanshi-singh-737614284/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+        <p>Let's Conenct</p>
+        <a href="http://www.instagram.com/devanshiii.singh" target="_blank"><img src="./assets/images.jpeg" alt="Instagram" height="50px" width="50px"></a>
+        <a href="mailto:singh20.devanshi@gmail.com" target="_blank"><img src="./assets/gmail logo.png" alt="Gmail" height="50px" width="50px"></a>
+        <a href="https://github.com/Devanshisin" target="_blank"><img src="./assets/github logo.png" alt="Github" height="50px" width="50px"></a>
+        <a href="https://www.linkedin.com/in/devanshi-singh-737614284/" target="_blank"><img src="./assets/linkedin logo.webp" alt="Linkedln" height="50px" width="50px"></a>
+    </div>
+    <div class="Form">
+     Name <input type="Name" placeholder="Enter Your Name" type="text">
+     Email <input type="Email" placeholder="Enter Your Email" type="email">
+     Message <input type="Message" placeholder="Enter Your Message" type="text">
+     <button class="button">Sumbit</button>
     </div>
 </section>
     <script src="Main.js"></script> 
