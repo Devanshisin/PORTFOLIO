@@ -207,7 +207,7 @@ body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-/* Hero Section */
+
 .heading {
   margin: 50px auto;
   text-align: center;
@@ -238,7 +238,7 @@ body {
   width: 50%;
 }
 
-/* About Section */
+
 .About {
   padding: 20px;
   text-align: center;
@@ -265,7 +265,6 @@ body {
   margin: 10px;
 }
 
-/* Project Section */
 .project {
   padding: 20px;
   text-align: center;
@@ -288,7 +287,7 @@ body {
   margin: 10px 0;
 }
 
-/* Contact Section */
+
 .Contact {
   padding: 20px;
   text-align: center;
@@ -314,23 +313,49 @@ body {
   margin: 10px;
   display: inline-block;
 }
-.Form button {
-  width: 100%; /* Full width button */
+.Form {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.Form label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.Form input, .Form textarea {
+  width: 100%;
   padding: 10px;
-  background-color: #00b3b3; /* A nice contrasting color */
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+}
+
+.Form .submit-button {
+  display: inline-block;
+  background-color: #0074d9;
   color: white;
   border: none;
-  border-radius: 5px;
-  font-size: 18px;
+  padding: 10px 20px;
+  font-size: 16px;
   cursor: pointer;
+  border-radius: 5px;
 }
 
-.Form button:hover {
-  background-color: #008a8a; /* Darken button on hover */
+.Form .submit-button:hover {
+  background-color: #005f9e;
 }
-/* Responsive Styling */
 
-/* For tablets and small laptops (up to 992px) */
+
+
 @media (max-width: 992px) {
   .heading {
       font-size: 32px;
@@ -358,7 +383,7 @@ body {
   }
 }
 
-/* For mobile devices (up to 768px) */
+
 @media (max-width: 768px) {
   .navbar {
       flex-direction: column;
@@ -408,7 +433,7 @@ body {
   }
 }
 
-/* For small mobile devices (up to 576px) */
+
 @media (max-width: 576px) {
   .navbar {
       font-size: 14px;
