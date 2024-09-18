@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0px;
     padding: 0px;
     color: white;
@@ -141,6 +141,196 @@
     color: black;
     background-color:white;
 }
+@media (max-width: 992px) {
+  .heading {
+      font-size: 32px;
+  }
+
+  .heading h6 {
+      font-size: 20px;
+  }
+
+  .abt, .project h1, .Contact h1 {
+      font-size: 28px;
+  }
+
+  .About p {
+      font-size: 18px;
+  }
+
+  .project p, .Contact p {
+      font-size: 18px;
+  }
+
+  .project img, .project iframe {
+      width: 100%;
+      max-width: 480px;
+  }
+}
+
+/* For mobile devices (up to 768px) */
+/* General Styles */
+* {
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  background-image: url("./assets/bg img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  text-decoration: none;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #00b3b3;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Hero Section */
+.heading {
+  margin: 50px auto;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.heading h6 span {
+  color: aqua;
+  font-size: 24px;
+}
+
+.image {
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+}
+
+.image img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+}
+
+.line {
+  border-top: 2px solid white;
+  margin: 20px auto;
+  width: 50%;
+}
+
+/* About Section */
+.About {
+  padding: 20px;
+  text-align: center;
+}
+
+.abt {
+  font-size: 35px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom: 20px;
+}
+
+.About p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.About h4 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.About img {
+  margin: 10px;
+}
+
+/* Project Section */
+.project {
+  padding: 20px;
+  text-align: center;
+}
+
+.project h1 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.project img {
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  margin: 20px 0;
+}
+
+.project p {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+/* Contact Section */
+.Contact {
+  padding: 20px;
+  text-align: center;
+}
+
+.Contact h1 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.Contact p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.Contact a {
+  margin: 10px;
+  display: inline-block;
+}
+.Contact a img {
+  width: 50px; 
+  height: 50px; 
+  margin: 10px;
+  display: inline-block;
+}
+.Form button {
+  width: 100%; /* Full width button */
+  padding: 10px;
+  background-color: #00b3b3; /* A nice contrasting color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.Form button:hover {
+  background-color: #008a8a; /* Darken button on hover */
+}
+/* Responsive Styling */
+
+/* For tablets and small laptops (up to 992px) */
 @media (max-width: 992px) {
   .heading {
       font-size: 32px;
