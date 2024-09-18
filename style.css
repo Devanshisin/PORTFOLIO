@@ -141,90 +141,40 @@
     color: black;
     background-color:white;
 }
-@media only screen and (max-width: 768px) {
-    nav {
-      flex-direction: row;
-      align-items:center;
-    }
-    nav a {
-      font-size: 18px;
-      margin-bottom: 10px;
-    }
-
-    .heropg {
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    .heropg h1 {
-      font-size: 24px;
-    }
-    .heropg h3 {
-      font-size: 18px;
-    }
-    .heropg h6 {
+@media (max-width: 576px) {
+  .navbar {
       font-size: 14px;
-    }
-
-    .profile {
-      flex-direction: column;
-      align-items: center;
-    }
-    .profile img {
-      width: 100%;
-      height: auto;
-    }
-  
-    .About {
-      padding: 20px;
-    }
-    .About h1 {
-      font-size: 24px;
-    }
-    .About p {
-      font-size: 16px;
-    }
-    .About img {
-      width: 50%;
-      height: auto;
-    }
-  
-    .Project {
-      padding: 20px;
-    }
-    .Project h1 {
-      font-size: 24px;
-    }
-    .Project img {
-      width: 156px;
-      height: 315px;
-    }
-  
-    .Contact {
-      padding: 20px;
-    }
-    .Contact h1 {
-      font-size: 24px;
-    }
-    .Contact p {
-      font-size: 16px;
-    }
-    .Contact img {
-      width: 50%;
-      height: auto;
-    }
-    .Form {
-      flex-direction: column;
-      align-items: center;
-    }
-    .Form input {
-      width: 100%;
-      margin-bottom: 10px;
-    }
-    .Form button {
-      width: 100%;
-    }
   }
+
+  .heading {
+      font-size: 20px;
+      margin-top: 20px;
+  }
+
+  .heading h6 {
+      font-size: 16px;
+  }
+
+  .About p {
+      font-size: 14px;
+      padding: 0 10px;
+  }
+
+  .project p {
+      font-size: 16px;
+  }
+
+  .project img, .project iframe {
+      width: 100%;
+      height: auto;
+  }
+
+  .Contact p {
+      font-size: 18px;
+  }
+
+  .Form {
+      width: 100%;
+  }
+}
   
